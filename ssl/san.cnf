@@ -1,0 +1,36 @@
+
+[ req ]
+default_bits       = 2048
+distinguished_name = req_distinguished_name
+req_extensions     = req_ext
+
+
+[ req_distinguished_name ]
+countryName                = CA
+stateOrProvinceName        = QC
+localityName               = MTL
+organizationName           = bubliks
+organizationalUnitName     = bubliks
+commonName                 = cool.bubliks.net
+
+[req_ext]
+keyUsage = keyEncipherment, dataEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+
+
+[alt_names]
+DNS.1   = cool.bubliks.net
+DNS.2   = jenkins.bubliks.net
+DNS.3   = bubliks.bubliks.net
+DNS.4   = www.bubliks.net
+DNS.5   = super.bubliks.net
+DNS.6   = prom.bubliks.net
+DNS.7   = mail.bubliks.net
+DNS.8   = hleb.bubliks.net
+DNS.9   =  bubliks.net
+DNS.10  = graf.bubliks.net
+DNS.11  = phpinfo.bubliks.net
+DNS.12  = info.bubliks.net
+DNS.13  = nexus.bubliks.net
+
