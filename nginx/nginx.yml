@@ -1,11 +1,24 @@
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: nginx-deployment
   labels:
     app: nginx-app
   namespace: apps
+
 spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-app
+  template:
+    metadata:
+      labels:
+        app: nginx-app
+
+
+
+    spec:
       containers:
       - name: nginxfeva
         image: nginx:latest
@@ -37,7 +50,6 @@ spec:
                - mountPath: /etc/nginx/dhparam.pem
                  name: dhparam
 
-
         ports:
         - containerPort: 80
         - containerPort: 443
@@ -50,7 +62,7 @@ spec:
 
       - name: bublikconf
         hostPath:
-          path: /home/devops/devops/nginx/bublik.conf
+          path: /home/devops/devops/nginx/bublik2.conf
           type: FileOrCreate
 
       - name: self
@@ -90,11 +102,14 @@ spec:
           path: /home/devops/devops/ssl/ssl.crt
           type: FileOrCreate
 
+
       - name: dhparam
         hostPath:
           path: /home/devops/devops/ssl/dhparam.pem
           type: FileOrCreate
 
+      nodeSelector:   
+        yummy: hleb 
 
 ---
 
@@ -119,7 +134,13 @@ spec:
     - name: https
       protocol: TCP
       port: 443
+      targetPort: 443
       nodePort: 30443
   externalIPs:
      - 10.1.1.8
+
+
+
+
+
 
