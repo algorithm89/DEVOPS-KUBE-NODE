@@ -1,0 +1,146 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx-app
+  namespace: apps
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-app
+  template:
+    metadata:
+      labels:
+        app: nginx-app
+
+
+
+    spec:
+      containers:
+      - name: nginxfeva
+        image: nginx:latest
+        volumeMounts:
+               - mountPath: /etc/nginx/nginx.conf
+                 name: nginxconf
+               - mountPath: /etc/nginx/conf.d/bublik.conf
+                 name: bublikconf
+
+               - mountPath: /etc/nginx/snippets/ssl-params.conf
+                 name: sslparams
+
+               - mountPath: /etc/nginx/snippets/self-signed.conf
+                 name: self 
+
+
+
+               - mountPath: /usr/share/nginx/html1
+                 name: html1
+               - mountPath: /usr/share/nginx/html2
+                 name: html2
+               - mountPath: /usr/share/nginx/html3
+                 name: html3
+
+               - mountPath: /etc/nginx/ssl/ssl.crt
+                 name: sslcrt
+               - mountPath: /etc/nginx/ssl/ssl.key
+                 name: sslkey
+               - mountPath: /etc/nginx/dhparam.pem
+                 name: dhparam
+
+        ports:
+        - containerPort: 80
+        - containerPort: 443
+
+      volumes:
+      - name: nginxconf
+        hostPath:
+          path: /home/devops/devops/nginx/nginx.conf
+          type: FileOrCreate
+
+      - name: bublikconf
+        hostPath:
+          path: /home/devops/devops/nginx/bublik2.conf
+          type: FileOrCreate
+
+      - name: self
+        hostPath:
+          path: /home/devops/devops/nginx/selfsigned.conf
+          type: FileOrCreate
+
+      - name: sslparams
+        hostPath:
+          path: /home/devops/devops/nginx/ssl-params.conf
+          type: FileOrCreate
+
+
+
+      - name: html1
+        hostPath:
+          path: /home/devops/devops/html1
+          type: DirectoryOrCreate
+
+      - name: html2
+        hostPath:
+          path: /home/devops/devops/html2
+          type: DirectoryOrCreate
+
+      - name: html3
+        hostPath:
+          path: /home/devops/devops/html3
+          type: DirectoryOrCreate
+
+      - name: sslkey
+        hostPath:
+          path: /home/devops/devops/ssl/ssl.key
+          type: FileOrCreate
+
+      - name: sslcrt
+        hostPath:
+          path: /home/devops/devops/ssl/ssl.crt
+          type: FileOrCreate
+
+
+      - name: dhparam
+        hostPath:
+          path: /home/devops/devops/ssl/dhparam.pem
+          type: FileOrCreate
+
+      nodeSelector:   
+        yummy: hleb 
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginxexpose
+  namespace: apps
+spec:
+  type: LoadBalancer
+  selector:
+     app: nginx-app
+
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30888
+
+
+    - name: https
+      protocol: TCP
+      port: 443
+      targetPort: 443
+      nodePort: 30443
+  externalIPs:
+     - 10.1.1.8
+
+
+
+
+
+
