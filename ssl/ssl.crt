@@ -1,34 +1,79 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            c0:f8:1a:0a:81:dd:78:c9:82:22:21:1b:c3:81:9c:bd
+        Signature Algorithm: ecdsa-with-SHA512
+        Issuer: CN=Easy-RSA CA
+        Validity
+            Not Before: Feb 18 20:52:54 2022 GMT
+            Not After : May 23 20:52:54 2024 GMT
+        Subject: C=CA, ST=QC, L=MTL, O=bubliks, OU=bubliks, CN=studios.bubliks.net
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:be:48:02:ce:49:dc:ec:de:35:c0:08:be:5c:ce:
+                    70:15:42:7e:71:92:04:2d:aa:f4:2c:d5:9e:51:16:
+                    a4:ca:40:5a:49:b2:3e:3d:b5:af:f1:08:3d:b2:b7:
+                    e5:59:90:66:58:e6:b3:32:2e:4e:a5:1a:27:6c:80:
+                    07:31:4c:9f:25:ae:0c:19:9f:4a:bc:ce:cc:5e:15:
+                    ef:77:82:b3:d8:97:45:b1:34:28:e4:97:d4:af:b2:
+                    8c:50:d1:e4:48:4f:f4:3e:6c:8b:09:d4:a0:ff:9f:
+                    6a:82:27:6f:62:74:56:f4:a1:94:e2:1c:61:1f:6d:
+                    79:d4:da:4d:7f:cd:43:b7:a6:b8:79:0f:59:82:40:
+                    0a:4f:39:03:81:49:ef:1a:6e:3a:91:f5:d8:09:dc:
+                    77:1d:e4:3f:82:1b:ab:91:3f:3b:cf:04:71:60:11:
+                    2c:ba:9b:c0:0a:32:2b:79:5a:d0:44:69:38:32:67:
+                    47:b7:d7:93:51:38:c9:5f:61:94:f5:e8:ef:d6:7b:
+                    15:42:99:f7:f6:6d:a9:f9:59:8f:8b:ba:3e:fe:5c:
+                    6e:68:14:c0:25:d3:9a:39:63:c8:1f:17:ff:83:20:
+                    51:bf:69:ac:98:f8:5a:fd:45:be:7b:08:ac:0b:b9:
+                    46:74:ce:51:3f:2f:3e:a7:aa:90:65:62:07:08:90:
+                    25:6d
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                B7:5E:DC:15:AA:BF:BF:01:D0:18:95:F6:21:85:D1:F4:33:E1:12:6C
+            X509v3 Authority Key Identifier: 
+                keyid:2E:70:25:1A:92:44:DC:F3:B5:2F:87:3D:33:60:88:A1:33:45:84:EF
+                DirName:/CN=Easy-RSA CA
+                serial:16:72:7A:71:2E:1F:B8:0C:51:38:5C:1C:76:DD:56:D3:BC:3F:CC:3A
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:grafa.bubliks.net, DNS:prom.bubliks.net, DNS:regv2.bubliks.net, DNS:jenks.bubliks.net, DNS:nexus.bubliks.net, DNS:baraban.bubliks.net, DNS:studio.bubliks.net, DNS:baklava.bubliks.net
+    Signature Algorithm: ecdsa-with-SHA512
+         30:65:02:30:6c:da:64:d9:29:f8:fe:2f:69:7d:7d:30:38:8d:
+         e2:af:f8:78:fb:6e:21:d4:58:77:ab:5a:90:9d:7b:eb:47:f2:
+         e3:57:76:b4:34:2d:08:94:6a:fd:ec:30:b1:13:dc:cb:02:31:
+         00:95:c1:35:51:f0:67:39:e7:bb:65:ee:db:dd:dc:e7:b3:68:
+         2c:fd:ec:34:dd:0e:df:86:dc:73:8f:72:f2:f8:e5:81:6b:ac:
+         32:6f:92:b5:c3:ee:15:eb:ce:0c:8a:34:2e
 -----BEGIN CERTIFICATE-----
-MIIF0TCCBLmgAwIBAgIRANNkBMbVzSW8ST8LAtKVDo4wDQYJKoZIhvcNAQELBQAw
-FjEUMBIGA1UEAwwLYnVibGluaS5uZXQwHhcNMjEwODIyMDAzMTEzWhcNMjMxMTI1
-MDAzMTEzWjBnMQswCQYDVQQGEwJDQTELMAkGA1UECAwCUUMxDDAKBgNVBAcMA01U
-TDEQMA4GA1UECgwHYnVibGlrczEQMA4GA1UECwwHYnVibGlrczEZMBcGA1UEAwwQ
-Y29vbC5idWJsaWtzLm5ldDCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIB
-AOJCUV0TCtIByooSn9Rf63y+uiFiVsbioFxBCbZLwLCFDXA0Qkanppdoj4EOdJgz
-4rh6iblChBh+v8frnVtllvWKBfrsPafwKDnUnOgUJdViuaaJRO3zzLYP5kZ/lvVq
-riFCwH6BBhyNKmCDJVgrZZC0qqvgEgaguuuBQ2mFo3ZvQf3IzZoC9Fm7xhOhrw6K
-sgYFFzxsGeKszRdzKjyTCJobNK3V7M58DZ04T0h7b+lg7FGsQSijX09YzecjzBTt
-ilaWapyXRDKigBxrBsBQXl0gyYqOogpHWsriJJaBNiyUVn0BcRU0ovMK90xuhRXU
-vWiRGZhCNF6/QI618LSBkGs8Bag6lz3Z8P2U2PpOV7Je/bJSaEH3nUVgTjEnXRbn
-jHJdMhhEpFGbBkgk/FjuPHFbeCthDmxxH9Y7Pccv6yaBpGPsuL4e1VtRvpXQfgl4
-uSlx7QhhoRvwHzZbL0w42npXgWLjQ2vsQPuK8CmJwlcHZOqdFKdoOJAL1RkAJMp5
-3h3GnURrgc2HduknsZfZmO2KG7J4NQjUpjXdza/Z7Hy1GTew1eQz74eoAcjIFScN
-mWsMAE+bLG0Jf7m6AItDx7ZWqTwHtmvqkfIqZY1eELt5PtQWf2s/UyySWkVrMXsN
-wq0B92Dql/kTyXa3nuuWKVntwD5Z+wzmXWiZs3pJJFN3AgMBAAGjggHHMIIBwzAJ
-BgNVHRMEAjAAMB0GA1UdDgQWBBTPEDSxKMLhXAjwuH57lQ9Vo/p7HDBRBgNVHSME
-SjBIgBRRCRrvcZ5Gpupm2fW4C+sZJAVVIaEapBgwFjEUMBIGA1UEAwwLYnVibGlu
-aS5uZXSCFH6zm6o5NiMCBpOefTWxZVhvEdXwMBMGA1UdJQQMMAoGCCsGAQUFBwMB
-MAsGA1UdDwQEAwIFoDCCASAGA1UdEQSCARcwggETgg93d3cuYnVibGlrcy5uZXSC
-EXJlZ3YyLmJ1Ymxpa3MubmV0ghNqZW5raW5zLmJ1Ymxpa3MubmV0ghNidWJsaWtz
-LmJ1Ymxpa3MubmV0gg93d3cuYnVibGlrcy5uZXSCEXN1cGVyLmJ1Ymxpa3MubmV0
-ghBwcm9tLmJ1Ymxpa3MubmV0ghBtYWlsLmJ1Ymxpa3MubmV0ghBobGViLmJ1Ymxp
-a3MubmV0ggtidWJsaWtzLm5ldIIQZ3JhZi5idWJsaWtzLm5ldIITcGhwaW5mby5i
-dWJsaWtzLm5ldIIQaW5mby5idWJsaWtzLm5ldIIRbmV4dXMuYnVibGlrcy5uZXSC
-EGNvb2wuYnVibGlrcy5uZXQwDQYJKoZIhvcNAQELBQADggEBADZvFm72D50RSW1/
-M9U5sDKLFWlGJBAZlsfDJJ/ih58Mrrm2++M0FhbBBKu1gjwlp2Z5m3awxLECS4KZ
-0j6SK9Pz5MvIPwUZ1As+rGZlGoSeVu5iUfWOoDrxqp9pgFIZhgxRN7FaTEMLhwrt
-Cjuh2l63GRowDDHB/Kja57zZFEI8MXiNBh5pVzeAJZmpqUj2RniE7/0QUb6HllxT
-jRqL8ib3e6fDB1s2pxPNIou9e2FF0X/4xDJdkUJM8aSxhO8yhWLBP8W2s8EbL4T9
-8pQQ30g/1ZctvH/zCD//NWjghc3HdDcl8PLF87X1uCJtEtuV8Mq3JYmjPj+MtLHJ
-vQfXjBw=
+MIIDuTCCAz+gAwIBAgIRAMD4GgqB3XjJgiIhG8OBnL0wCgYIKoZIzj0EAwQwFjEU
+MBIGA1UEAwwLRWFzeS1SU0EgQ0EwHhcNMjIwMjE4MjA1MjU0WhcNMjQwNTIzMjA1
+MjU0WjBqMQswCQYDVQQGEwJDQTELMAkGA1UECAwCUUMxDDAKBgNVBAcMA01UTDEQ
+MA4GA1UECgwHYnVibGlrczEQMA4GA1UECwwHYnVibGlrczEcMBoGA1UEAwwTc3R1
+ZGlvcy5idWJsaWtzLm5ldDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+AL5IAs5J3OzeNcAIvlzOcBVCfnGSBC2q9CzVnlEWpMpAWkmyPj21r/EIPbK35VmQ
+ZljmszIuTqUaJ2yABzFMnyWuDBmfSrzOzF4V73eCs9iXRbE0KOSX1K+yjFDR5EhP
+9D5siwnUoP+faoInb2J0VvShlOIcYR9tedTaTX/NQ7emuHkPWYJACk85A4FJ7xpu
+OpH12Ancdx3kP4Ibq5E/O88EcWARLLqbwAoyK3la0ERpODJnR7fXk1E4yV9hlPXo
+79Z7FUKZ9/ZtqflZj4u6Pv5cbmgUwCXTmjljyB8X/4MgUb9prJj4Wv1FvnsIrAu5
+RnTOUT8vPqeqkGViBwiQJW0CAwEAAaOCAU0wggFJMAkGA1UdEwQCMAAwHQYDVR0O
+BBYEFLde3BWqv78B0BiV9iGF0fQz4RJsMFEGA1UdIwRKMEiAFC5wJRqSRNzztS+H
+PTNgiKEzRYTvoRqkGDAWMRQwEgYDVQQDDAtFYXN5LVJTQSBDQYIUFnJ6cS4fuAxR
+OFwcdt1W07w/zDowEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMIGn
+BgNVHREEgZ8wgZyCEWdyYWZhLmJ1Ymxpa3MubmV0ghBwcm9tLmJ1Ymxpa3MubmV0
+ghFyZWd2Mi5idWJsaWtzLm5ldIIRamVua3MuYnVibGlrcy5uZXSCEW5leHVzLmJ1
+Ymxpa3MubmV0ghNiYXJhYmFuLmJ1Ymxpa3MubmV0ghJzdHVkaW8uYnVibGlrcy5u
+ZXSCE2Jha2xhdmEuYnVibGlrcy5uZXQwCgYIKoZIzj0EAwQDaAAwZQIwbNpk2Sn4
+/i9pfX0wOI3ir/h4+24h1Fh3q1qQnXvrR/LjV3a0NC0IlGr97DCxE9zLAjEAlcE1
+UfBnOee7Ze7b3dzns2gs/ew03Q7fhtxzj3Ly+OWBa6wyb5K1w+4V684MijQu
 -----END CERTIFICATE-----
